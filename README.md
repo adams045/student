@@ -25,15 +25,15 @@ The `Student` class represents a student with the following attributes:
 - `toString()`: Converts the student data into a CSV string format for easy storage.
 - `fromFile(String file)`: Creates a `Student` object from the CSV file data.
 
-### 2. **StudentFileHandler**
-The `StudentFileHandler` class handles the reading and writing of student data from and to a CSV file (`students.csv`).
+### 2. **StudentFileReadWrite**
+The `StudentFileReadWrite` class handles the reading and writing of student data from and to a CSV file (`studentsData.csv`).
 
 #### Methods:
 - `readFile()`: Reads student data from the file and returns a list of `Student` objects.
 - `saveToFile(List<Student> students)`: Writes the list of students to the file. Uses multithreading to improve efficiency during the save process.
 
-### 3. **StudentService**
-The `StudentService` class provides methods for managing student records. It interacts with the `StudentFileHandler` class to read and save data.
+### 3. **StudentOperations**
+The `StudentOperations` class provides methods for managing student records. It interacts with the `StudentFileReadWrite` class to read and save data.
 
 #### Methods:
 - `addStudent(Student student)`: Adds a new student to the list and saves the updated list to the file.
@@ -54,8 +54,4 @@ The `StudentManagementSystem` class is the entry point for the application. It p
   - Delete a student.
 - Uses the `StudentService` class to perform operations.
 
-## How to Run:
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/Student-Management-System.git
+## Below is the Demo code Video:
